@@ -133,6 +133,11 @@ type Request_options struct {
 	Context context.Context
 }
 
+
+func reg(requestVerb, url string, ro *Request_options) (*Response, error) {
+	return build_response(build_request(requestVerb, url, ro, nil))
+}
+
 // buildRequest is where most of the magic happens for request processing
 func build_request(httpMethod, url string, ro *Request_options, httpClient *http.Client) (*http.Response, error) {
 	if ro == nil {

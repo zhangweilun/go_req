@@ -1,7 +1,7 @@
 
 package publicsuffix
 
-
+//cookie的域名后缀
 
 import (
 	"fmt"
@@ -9,8 +9,7 @@ import (
 	"strings"
 )
 
-// List implements the cookiejar.PublicSuffixList interface by calling the
-// PublicSuffix function.
+
 var List cookiejar.PublicSuffixList = list{}
 
 type list struct{}
