@@ -2,7 +2,7 @@
 *.o
 *.a
 *.so
-
+commit.sh
 # Folders
 _obj
 _test

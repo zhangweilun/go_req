@@ -1,2 +1,2 @@
-# go_req
+# gor
 a go request library implements like python request
