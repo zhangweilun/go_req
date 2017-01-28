@@ -135,5 +135,5 @@ func (s *Session) Options(url string, ro *Request_options) (*Response, error) {
 
 // CloseIdleConnections closes the idle connections that a session client may make use of
 func (s *Session) CloseIdleConnections() {
-	s.HTTPClient.Transport.(*http.Transport).CloseIdleConnections()
+	s.HttpClient.Transport.(*http.Transport).CloseIdleConnections()
 }
