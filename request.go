@@ -192,6 +192,9 @@ func addCookies(ro *Request_options, req *http.Request) {
 	}
 }
 
+func doSessionRequest(requestVerb, url string, ro *Request_options, httpClient *http.Client) (*Response, error) {
+	return build_response(build_request(requestVerb, url, ro, httpClient))
+}
 
 // addHTTPHeaders adds any additional HTTP headers that need to be added are added here including:
 // 1. Custom User agent
